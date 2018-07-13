@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/txtNhom"
+    android:layout_margin="5dp"
+    android:textStyle="bold|italic"
+    android:textColor="#f43266"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:text="Chưa có nhóm nào được tạo !"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <ListView
+        android:clickable="true"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true"
+        android:id="@+id/listViewNhom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnThemNhom"
+        app:fabSize="mini"
+        app:backgroundTint="#257646"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/creategroup" />
+</RelativeLayout>

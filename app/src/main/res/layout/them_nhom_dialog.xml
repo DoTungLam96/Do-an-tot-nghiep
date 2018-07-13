@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="370dp"
+    android:background="#2c6878"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="300dp">
+    <TextView
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Thêm Nhóm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/ug"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imgthemIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <EditText
+        android:background="@drawable/custom_edt"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Nhập tên nhóm"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:drawablePadding="8dp"
+        android:id="@+id/edtThemNhom"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:textColor="#FFF"
+        android:id="@+id/btnThemNhom"
+        android:textAllCaps="false"
+        android:text="Thêm nhóm"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/btn_custom"
+        android:layout_width="300dp"
+        android:layout_height="40dp" />
+    <Button
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnThoatNhom"
+        android:textAllCaps="false"
+        android:text="Thoát"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/btn_custom"
+        android:layout_width="300dp"
+        android:layout_height="40dp" />
+
+</LinearLayout>

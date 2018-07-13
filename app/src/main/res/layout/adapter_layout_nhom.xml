@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_margin="5dp"
+    android:id="@+id/imgIcon"
+    android:layout_width="80dp"
+    android:layout_height="80dp" />
+        <TextView
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:id="@+id/txtTenNhom"
+            android:textColor="#e4517d"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imgIcon"
+            android:text="Tên Nhóm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+                <ImageButton
+                    android:layout_centerVertical="true"
+                    android:id="@+id/btnSuaNhom"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/edit"
+                    android:layout_toRightOf="@id/txtTenNhom"
+                    android:background="@null"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+        </RelativeLayout>
+</LinearLayout>

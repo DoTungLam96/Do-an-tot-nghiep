@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f1efef"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.appquanlyquanhecanhan.ThemLienHe">
+    <android.support.v7.widget.Toolbar
+        app:titleTextColor="#FFF"
+        app:title="Thêm"
+        app:titleTextAppearance="@style/ToolbarTitleText"
+        android:id="@+id/toolBar_themLH"
+        android:background="#255176"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_centerHorizontal="true"
+    android:id="@+id/imgHinhDaiDien"
+    android:src="@drawable/no"
+    android:layout_marginBottom="10dp"
+    android:layout_width="160dp"
+    android:layout_height="160dp" />
+    <ImageView
+        android:layout_below="@id/imgHinhDaiDien"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/test"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <ImageButton
+        android:id="@+id/btnFolder"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/imgHinhDaiDien"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@+id/test"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/folder" />
+    <ImageButton
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/btnFolder"
+        android:id="@+id/btnCamera"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/imgHinhDaiDien"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/camera" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnCamera"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/user"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <EditText
+                android:textColorHint="#236b69"
+                android:textSize="16sp"
+                android:id="@+id/edtTen"
+                android:textColor="@color/colorAccent"
+                android:paddingLeft="5dp"
+                android:hint="Tên liên hệ"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <EditText
+                android:maxLength="11"
+                android:inputType="number"
+                android:textColorHint="#236b69"
+                android:textSize="16sp"
+                android:id="@+id/edtSDT"
+                android:textColor="@color/colorAccent"
+                android:paddingLeft="5dp"
+                android:hint="Số điện thoại"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_email"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <EditText
+                android:textColorHint="#236b69"
+                android:textSize="16sp"
+                android:id="@+id/edtEmail"
+                android:textColor="@color/colorAccent"
+                android:paddingLeft="5dp"
+                android:hint="Email"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_facebook"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <EditText
+                android:textColorHint="#236b69"
+                android:id="@+id/edtFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Facebook"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/address"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <EditText
+                android:textColorHint="#236b69"
+                android:textSize="16sp"
+                android:id="@+id/edtDiaChi"
+                android:textColor="@color/colorAccent"
+                android:paddingLeft="5dp"
+                android:hint="Địa chỉ"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/alendar"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_marginTop="11dp"
+                android:textColorHint="#236b69"
+                android:textSize="16sp"
+                android:id="@+id/edtNgaySinh"
+                android:textColor="@color/colorAccent"
+                android:paddingLeft="5dp"
+                android:hint="Ngày sinh"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_marginBottom="10dp"
+        app:fabSize="mini"
+        android:id="@+id/btnLike"
+        android:src="@drawable/unstarpng"
+        android:layout_marginRight="12dp"
+        app:backgroundTint="#255176"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

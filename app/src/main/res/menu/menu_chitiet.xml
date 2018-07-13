@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Chỉnh sửa"
+       android:id="@+id/menu_chinhsua"></item>
+    <item android:title="Mối quan hệ khác"
+          android:id="@+id/menu_moiquanhekhac"
+        ></item>
+    <item android:title="Thoát"
+        android:id="@+id/menu_thoat"
+        ></item>
+</menu>

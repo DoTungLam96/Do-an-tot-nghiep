@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<TextView
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:textColor="#b1631a"
+    android:textStyle="bold"
+    android:text="Hướng dẫn sử dụng"
+    android:textSize="22sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+  <TextView
+      android:textSize="18sp"
+      android:textColor="#b91944"
+      android:layout_margin="10dp"
+      android:text="@string/title_one"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:textColor="#2a5d73"
+      android:layout_marginRight="3dp"
+      android:text="@string/back_up_du_lieu"
+      android:textSize="16sp"
+      android:layout_marginLeft="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:textSize="18sp"
+      android:textColor="#b91944"
+      android:layout_margin="10dp"
+      android:text="@string/title_two"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:textColor="#2a5d73"
+      android:layout_marginRight="3dp"
+      android:text="@string/import_du_lieu"
+      android:textSize="16sp"
+      android:layout_marginLeft="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:textSize="18sp"
+      android:textColor="#b91944"
+      android:layout_margin="10dp"
+      android:text="@string/title_three"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:textColor="#2a5d73"
+      android:layout_marginRight="3dp"
+      android:text="@string/xoa_du_lieu"
+      android:textSize="16sp"
+      android:layout_marginLeft="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+</LinearLayout>

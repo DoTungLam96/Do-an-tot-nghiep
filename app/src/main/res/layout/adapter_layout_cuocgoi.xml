@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="13sp"
+        android:id="@+id/txtTinhTrang"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:text="Tình trạng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:id="@+id/txtThoiLuong"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:text="Thời lượng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<TextView
+    android:textSize="13sp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/txtNgayGoiDien"
+    android:textColor="@color/colorAccent"
+    android:gravity="center"
+    android:text="Ngày gọi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+</LinearLayout>

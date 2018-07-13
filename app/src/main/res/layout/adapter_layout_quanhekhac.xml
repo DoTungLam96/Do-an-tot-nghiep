@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="7dp"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/linear"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtHoTenQH"
+                android:textColor="#255176"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+                android:text="Họ tên"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtSDTQH"
+                android:textColor="#255176"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+                android:text="SĐT quan hệ khác"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtKieuQH"
+                android:textColor="#255176"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+                android:text="Kiểu quan hệ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtDiaChiQH"
+                android:textColor="#255176"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+                android:text="Địa chỉ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtNgaySinhQH"
+                android:textColor="#255176"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="italic"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:text="Liên hệ ngay :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/btnTinNhanKhac"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emaila" />
+                <ImageButton
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/btnGoiDienKhac"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+                    android:src="@drawable/callp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <ImageButton
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/btnBook"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+                    android:src="@drawable/book"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+<ImageButton
+    android:id="@+id/btnChinhSua"
+    android:layout_margin="5dp"
+    android:layout_alignParentRight="true"
+    android:scaleType="fitXY"
+    android:background="@null"
+    android:src="@drawable/edit"
+    android:layout_width="25dp"
+    android:layout_height="25dp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

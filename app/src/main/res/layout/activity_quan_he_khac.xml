@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.appquanlyquanhecanhan.ChucNangKhac.QuanHeKhacActivity">
+<android.support.v7.widget.Toolbar
+    app:titleTextColor="#FFF"
+    app:title="Quan hệ khác"
+    android:background="#255176"
+    android:id="@+id/tool"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"></android.support.v7.widget.Toolbar>
+    <ListView
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true"
+        android:layout_below="@id/tool"
+        android:id="@+id/listViewQHKhac"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <TextView
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@id/tool"
+        android:id="@+id/txtQHK"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:text="Dữ diệu trống ! Hãy thêm mối quan hệ khác"
+    android:textColor="@color/colorAccent"
+    android:textSize="18sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabThem"
+        app:backgroundTint="#44bc5e"
+        app:fabSize="mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/add" />
+</RelativeLayout>

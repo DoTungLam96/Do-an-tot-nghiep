@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">App Quan Ly Quan He Ca Nhan</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_one"><u><b>1. Hướng dẫn lưu trữ dữ liệu</b></u></string>
+    <string name="back_up_du_lieu">
+        Sau khi ấn vào <i><b>Lưu trữ dữ liệu</b></i> thì hệ thống se tự động tạo thư mục
+        có tên <b>Database</b> và lưu file <b>"CSDL.sqlite"</b> vào thư mục này.
+    </string>
+    <string name="title_two"><u><b>2. Hướng dẫn tải dữ liệu từ bộ nhớ</b></u></string>
+    <string name="import_du_lieu">
+            Sau khi ấn <i><b>Tải dữ liệu từ bộ nhớ</b></i> thì hệ thống sẽ tự động import file <b>CSDL.sqlite</b> trong thư mục
+        <b>Database</b> đã tạo ở mục 1.\n
+        - Để có thể import được file <i>.sqlite</i> từ bộ nhớ điện thoại bạn cần phải có 1 file .sqlite và tên file
+        phải có dạng <b><i>CSDL.sqlite</i></b> rồi lưu vào thư mục <b><i>Database</i></b>.\n
+        - Với trường hợp lưu sai thư mục và tên file không đúng định dạng ở trên hệ thống sẽ báo lỗi !
+    </string>
+    <string name="title_three"><u><b>3. Xóa toàn bộ dữ liệu</b></u></string>
+    <string name="xoa_du_lieu">
+            Khi bạn ấn <i><b>Xóa toàn bộ dữ liệu</b></i> thì toàn bộ dữ liệu của hệ thống sẽ bị xóa.\nBạn cần phải
+        cân nhắc khi sử dụng chức năng này.
+    </string>
+</resources>

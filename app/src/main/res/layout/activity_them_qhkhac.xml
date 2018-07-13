@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.appquanlyquanhecanhan.ChucNangKhac.ThemQHKhacActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarQH"
+        app:titleTextColor="#FFF"
+        app:title="Thêm mối quan hệ"
+        android:background="#255176"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"></android.support.v7.widget.Toolbar>
+    <TextView
+    android:layout_marginBottom="10dp"
+    android:textStyle="bold"
+    android:textColor="#991774"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:text="Thêm Mối Quan Hệ Khác"
+    android:textSize="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/us"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <EditText
+            android:textColorHint="#236b69"
+            android:textSize="18sp"
+            android:id="@+id/edtName"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="5dp"
+            android:hint="Tên liên hệ"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/p"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <EditText
+            android:inputType="number"
+            android:textColorHint="#236b69"
+            android:textSize="18sp"
+            android:id="@+id/edtSDTThem"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="5dp"
+            android:hint="SĐT"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/like"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <EditText
+            android:textColorHint="#236b69"
+            android:textSize="18sp"
+            android:id="@+id/edtKieuQH"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="5dp"
+            android:hint="Kiểu quan hệ"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/placeholder"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <EditText
+            android:layout_gravity="center"
+            android:textColorHint="#236b69"
+            android:textSize="18sp"
+            android:id="@+id/edtDiaChiQH"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="5dp"
+            android:hint="Địa chỉ"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/alendar"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:textColorHint="#236b69"
+            android:textSize="18sp"
+            android:id="@+id/edtNgaySinhThem"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="5dp"
+            android:hint="Ngày sinh"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnThemQH"
+        android:textColor="#236b69"
+        android:textSize="17sp"
+        android:text="Thêm"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_btn"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnThoat"
+        android:textColor="#236b69"
+        android:textSize="17sp"
+        android:text="Thoát"
+        android:background="@drawable/custom_btn"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

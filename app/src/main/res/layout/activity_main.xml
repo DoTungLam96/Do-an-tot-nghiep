@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.appquanlyquanhecanhan.MainActivity">
+ <android.support.v4.widget.DrawerLayout
+     android:id="@+id/drawerLayout"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <android.support.design.widget.NavigationView
+         android:layout_gravity="start"
+         android:id="@+id/navigation"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+             <ImageView
+                 android:background="@drawable/logo"
+                 android:layout_width="match_parent"
+                 android:layout_height="150dp" />
+             <ListView
+                 android:divider="#e0d5d9d5"
+                 android:dividerHeight="1.2dp"
+                 android:layout_marginTop="3dp"
+                 android:id="@+id/listView"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+             </ListView>
+         </LinearLayout>
+     </android.support.design.widget.NavigationView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        app:titleTextColor="#FFF"
+        app:title="Quản lý"
+        android:id="@+id/toolBar"
+        android:background="#255176"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/meterialSearch"
+        android:hint="Tìm kiếm"
+        app:searchBackIcon="@drawable/back"
+        android:layout_width="match_parent"
+        android:textColorHint="#255176"
+        android:layout_height="wrap_content">
+    </com.miguelcatalan.materialsearchview.MaterialSearchView>
+
+<FrameLayout
+    android:id="@+id/frame"
+    android:layout_below="@id/toolBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_below="@id/toolBar"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TabWidget
+            android:background="#255176"
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TabWidget>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v4.view.ViewPager
+                android:layout_below="@id/tabHost"
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v4.view.ViewPager>
+        </FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+
+
+</FrameLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        app:fabSize="mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/add" />
+
+</RelativeLayout>
+ </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
